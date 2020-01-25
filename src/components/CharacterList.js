@@ -19,11 +19,11 @@ export default function CharacterList() {
 
   }, []);
 
-  console.log(char);
+  // console.log(char);
 
   return (
     <section className="character-list">
-      <div>
+      <div className='characters'>
         {char.map((el) =>{
           return <CharacterCard key={el.id} character={el} />
         })}
