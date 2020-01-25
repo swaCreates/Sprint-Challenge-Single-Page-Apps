@@ -24,7 +24,7 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      <Link to='/'>Back To Welcome Page</Link>
+      <Link to='/'>Back to Welcome Page</Link>
       <div className='characters'>
         {char.map((el) =>{
           return <CharacterCard key={el.id} character={el} />

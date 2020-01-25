@@ -13,7 +13,7 @@ export default function WelcomePage() {
         />
       </header>
       <div className='link-container'>
-        <Link className='link' to='/characters'>Enter Into This Marvelous World</Link>
+        <Link className='link' to='/characters'>Enter This Awesome World</Link>
       </div>
     </section>
   );
