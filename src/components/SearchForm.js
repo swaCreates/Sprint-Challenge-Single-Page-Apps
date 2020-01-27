@@ -3,8 +3,11 @@ import React, { useState } from "react";
 export default function SearchForm() {
  
   return (
+    
     <section className="search-form">
-     // Add a search form here
+      <form className='form'>
+        <input type='text' placeholder='search...' />
+      </form>
     </section>
   );
 }

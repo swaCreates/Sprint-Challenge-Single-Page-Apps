@@ -46,6 +46,7 @@ header h1 {
   .link-container{
     margin-top: 3%;
     padding: 2%;
+    
 
     .link{
       text-decoration: none;
@@ -90,7 +91,16 @@ header h1 {
 
 .character-list{
 
+  // .search{
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   width: 5%;
+  //   position: relative;
+  //   left: 70%;
+  // }
+
   a{
+    display: inline-block;
     text-decoration: none;
     padding: 1%;
     background-color: navajowhite;
@@ -113,6 +123,24 @@ header h1 {
   
   }
 
+}
+
+// Search file //
+
+.form{
+  display: flex;
+  justify-content: flex-end;
+  width: 35%;
+  position: relative;
+  left: 60%;
+  margin-bottom: 2%;
+
+  input{
+    padding: 2%;
+    width: 70%;
+    font-size: 1rem;
+    border-radius: 20px;
+  }
 }
 
 
