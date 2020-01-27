@@ -26,7 +26,6 @@ export default function CharacterList(props) {
   return (
     <section className="character-list">
       <Link to='/'>Back to Welcome Page</Link>
-      {/* <Link className='search' to='/search'>Search</Link> */}
       <SearchForm/>
       <div className='characters'>
         {char.map((el) =>{
