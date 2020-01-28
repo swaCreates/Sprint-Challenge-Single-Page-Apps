@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
-import CharacterCard from "./CharacterCard";
-import {Link} from 'react-router-dom';
+// import CharacterCard from "./CharacterCard";
+// import {Link} from 'react-router-dom';
 import SearchForm from "./SearchForm";
 
-export default function CharacterList(props) {
+export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
 
   const [char, setChar]= useState([]);
@@ -21,17 +21,17 @@ export default function CharacterList(props) {
 
   }, []);
 
-  // console.log(char);
 
   return (
     <section className="character-list">
-      <Link to='/'>Back to Welcome Page</Link>
-      <SearchForm/>
+      {/* <Link to='/'>Back to Welcome Page</Link> */}
+      {/* <Link class='filter' to='/characters/filter'>filter</Link>
       <div className='characters'>
         {char.map((el) =>{
           return <CharacterCard key={el.id} character={el} />
         })}
-      </div>
+      </div> */}
+      <SearchForm/>
 
     </section>
   );
