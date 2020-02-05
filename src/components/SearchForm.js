@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {Card} from 'reactstrap';
 import {Link} from 'react-router-dom';
+import CharacterCard from './CharacterCard';
 
 export default function SearchForm() {
 
@@ -17,7 +18,7 @@ export default function SearchForm() {
               setFilterd(res.data.results);
             }
             catch(err){
-              throw new Error(err);
+              console.log(`This is my error: `,err);
             }
              };
           fetchData(); 
@@ -48,15 +49,8 @@ export default function SearchForm() {
         />
       </form>
       <div className='filter-characters'>
-        {data.map((char,i)=> {   
-          return <div className='card-container2'>
-              <Card key={i} className='card'>
-                <img className='img' src={char.image} alt={char.name}/>
-                <h3>Name: {char.name}</h3>
-                <p>Species: {char.species}</p>
-                <p>Gender: {char.gender}</p>
-              </Card>
-            </div>
+        {data.map((character)=> { 
+          return <CharacterCard character={character}/>
           })
         }
       </div>
