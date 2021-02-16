@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 export default function WelcomePage() {
   return (
@@ -11,6 +12,9 @@ export default function WelcomePage() {
           alt="rick"
         />
       </header>
+      <div className='link-container'>
+        <Link className='link' to='/characters'>Enter This Awesome World</Link>
+      </div>
     </section>
   );
 }
